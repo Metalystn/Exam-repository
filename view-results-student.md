@@ -4,14 +4,13 @@ This is a core feature. This is because all students need to know whether they p
 # User story
 As a student, I need to view the results of an exam so that I can see whether I pass or fail.
 
-## Feature breakdown  
+## Feature breakdown
 - The student opens the exam results interface.
-- The system collects the list of exams that the student has taken.
-- The system displays the list of exams to the student.
-- The student selects an instance of a single exam.
-- The system collects the information about the student's result in that exam.
-- The system displays the result to the student, indicating whether they passed or failed.
-- The student may also choose to view a breakdown of their score, if available.
+- The system collects the list of exams across all the courses the student has taken.
+- The system displays a list of exam results, grouped by course, so the student can see all their results at once.
+- Each exam result shows the course name, and whether the student passed or failed.
+- If available, the student can expand any exam result to view a detailed breakdown of their score.
+
 
 ## Responsibility of the feature  
 ### Security and Privacy Responsibility
