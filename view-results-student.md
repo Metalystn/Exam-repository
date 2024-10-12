@@ -1,5 +1,5 @@
 ## Viewering results (student)  
-This is a primary feature. This is because all students need to know whether they passed or failed an exam in order to assess their progress and make adjustments to their studies. Therefore, this feature is mandatory for students.
+This is a core feature. This is because all students need to know whether they passed or failed an exam in order to assess their progress and make adjustments to their studies. Therefore, this feature is mandatory for students.
 
 # User story
 As a student, I need to view the results of an exam so that I can see whether I pass or fail.
