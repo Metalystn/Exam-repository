@@ -9,7 +9,7 @@ As a student, I need to view the results of an exam so that I can see whether I 
 - The system collects the list of exams across all the courses the student has taken.
 - The system displays a list of exam results, grouped by course, so the student can see all their results at once.
 - Each exam result shows the course name, and whether the student passed or failed.
-- If available, the student can expand any exam result to view a detailed breakdown of their score.
+- Optionally, the student can expand any exam result to view a detailed breakdown of their score.
 
 
 ## Responsibility of the feature  
