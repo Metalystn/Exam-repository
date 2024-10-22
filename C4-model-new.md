@@ -14,10 +14,7 @@
 - **Notification System**: 
   - Sends alerts and notifications (e.g., exam registration confirmation, grade announcements).
 - **Database**: 
-  - Stores all relevant exam, student, and course information, allowing the system to quickly access and update data as needed.
-
-### Summary:
-The Exam Management System enables teachers, students, and managers to perform their roles while communicating with external systems such as the notification system and database.
+  - Stores all relevant exam, student, and course information.
 
 # Container Diagram
 
@@ -28,12 +25,12 @@ The Exam Management System enables teachers, students, and managers to perform t
 - **Responsibilities**:
   - **Teacher Portal**: Manage credits, grades, and courses.
   - **Student Portal**: Register for exams, view grades and results.
-  - **Manager Portal**: Manage room registration, generate reports.
+  - **Manager Portal**: Manage room registration, write reports.
 - **Interactions**: Connects to backend microservices for core functionality.
 
 ### 2. Backend Microservices
 - **Purpose**: Handles core business logic of the system.
-- **Microservices**:
+- **Services**:
   - **Credit Awarding Service**:
     - Awards credits based on student data and conditions.
     - Updates records in the database and triggers notifications.
@@ -53,13 +50,9 @@ The Exam Management System enables teachers, students, and managers to perform t
 - **Purpose**: Stores data required by all the services.
 - **Responsibilities**:
   - Holds student records, course data, exam schedules, grades, and room allocations.
-  - Supports efficient querying and updating by the backend services.
 
 ### 4. Notification Service
 - **Purpose**: Sends notifications triggered by system events.
 - **Responsibilities**:
   - Sends email and SMS alerts (e.g., exam registration confirmation, credit awards, grade publication).
   - Logs notification statuses (sent, delivered, failed) for auditing.
-
-### Summary:
-The Exam Management System consists of a web application for user interaction, several backend microservices for handling core responsibilities, a central database for data persistence, and a notification service for user communication.
