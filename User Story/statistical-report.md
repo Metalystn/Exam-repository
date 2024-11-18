@@ -3,11 +3,11 @@
 
 ## Feature Breakdown
 
-1. **The manager logs in.**
+1. **The user logs in.**
 
-2. **The system authenticates manager.**
-   - If the authentication fails, it requires the manager to log in again.
-   - If the authentication is successful, the system displays the managers home page.
+2. **The system authenticates user.**
+   - If the authentication fails, it requires the user to log in again.
+   - If the authentication is successful, the system displays the user's home page.
 
 3. **The manager opens the results reporting interface.**
    
@@ -39,9 +39,9 @@
 
 ## Responsibility of the Feature
 
-- **Manager Authentification**
+- **User Authentification**
   - Provide functional log in page.
-  - Provide secure authentication process to the manager. 
+  - Provide secure authentication process to the user. 
 
 - **Data Collection Responsibility**
   - Integrate with the centralized database to retrieve past results.
