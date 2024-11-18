@@ -11,10 +11,10 @@ This is a core feature.The Awarding Grades feature allows teachers to assign gra
 ---
 
 ## Feature Breakdown
-Student logs in.
-1. The system authenticates teacher.
-   - If the authentication fails, it requires the teacher to log in again.
-   - If the authentication is successful, the system displays the teachers' home page.
+User logs in.
+1. The system authenticates user.
+   - If the authentication fails, it requires the user to log in again.
+   - If the authentication is successful, the system displays the user's home page.
 2. The teacher opens the grading interface.
 3. The system retrieves and displays a list of students who completed the exam.
 4. The teacher selects a student to grade or chooses to grade all students.
