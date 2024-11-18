@@ -8,12 +8,16 @@
 
 ## Feature Breakdown
 
-1. The teacher opens the exams interface in the student information system (SIS).
-2. The system retrieves and displays the list of courses taught by the teacher from the database.
-3. The teacher selects the relevant course to manage.
-4. The system fetches and displays the list of students enrolled in the selected course.
-5. The teacher chooses the student they want to review for credit assignment.
-6. If the course uses midterms or quizzes:
+User logs in.
+1. The system authenticates user.
+   - If the authentication fails, it requires the user to log in again.
+   - If the authentication is successful, the system displays the user's home page.
+2. The teacher opens the exams interface in the student information system (SIS).
+3. The system retrieves and displays the list of courses taught by the teacher from the database.
+4. The teacher selects the relevant course to manage.
+5. The system fetches and displays the list of students enrolled in the selected course.
+6. The teacher chooses the student they want to review for credit assignment.
+7. If the course uses midterms or quizzes:
     1. The system retrieves and displays the student's midterm and quiz results from the database.
     2. The teacher reviews the grades and determines if the student has earned sufficient points.
     3. The teacher selects the "Award Credit" button for the student.
@@ -25,11 +29,15 @@
             3. Displays a success confirmation to the teacher: _"Credit successfully awarded."_
             4. Sends a notification to the student (via email, SMS, or the SIS notification system) informing them they have been awarded credit.
         2. If the teacher selects "No" the system aborts the action and returns to the previous page. 
-7. If the course doesn’t rely on midterms/quizzes for credit awarding:
+8. If the course doesn’t rely on midterms/quizzes for credit awarding:
     1. The teacher manually assesses the student’s eligibility for getting the credit.
     2. The teacher repeats steps 3-5 (of the step 6) without reviewing midterm/quiz results.
 ---
 ## Responsibility of the feature
+
+### User Authentification
+- Provide functional log in page.
+- Provide secure authentication process to the user.
 
 ###  Data Collection Responsibilities:
 **Database Integration:**
