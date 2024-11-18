@@ -11,37 +11,44 @@ This is a core feature.The Awarding Grades feature allows teachers to assign gra
 ---
 
 ## Feature Breakdown
-
-1. The teacher opens the grading interface.
-2. The system retrieves and displays a list of students who completed the exam.
-3. The teacher selects a student to grade or chooses to grade all students.
-4. The teacher can either:
+Student logs in.
+1. The system authenticates teacher.
+   - If the authentication fails, it requires the teacher to log in again.
+   - If the authentication is successful, the system displays the teachers' home page.
+2. The teacher opens the grading interface.
+3. The system retrieves and displays a list of students who completed the exam.
+4. The teacher selects a student to grade or chooses to grade all students.
+5. The teacher can either:
     - Input grades manually, or
     - Review automatically generated grades for objective questions.
-5. If inputting manually:
+6. If inputting manually:
     - a. The teacher enters the score for each section of the exam.
     - b. The teacher adds feedback or comments if needed.
-6. If using automated grading:
+7. If using automated grading:
     - a. The system calculates grades for objective questions (e.g., multiple-choice).
     - b. The teacher reviews and adjusts the grades if necessary.
-7. Determine Bonus Criteria:
+8. Determine Bonus Criteria:
     - The teacher decides the reason for awarding bonus grades, such as:
         - Extra credit work
         - Outstanding performance
         - Participation
         - Bonus questions on the exam
-8. Enter the Bonus Grades:
+9. Enter the Bonus Grades:
     - In the grade entry section, the teacher manually adds bonus points to the student's total score.
     - The system may offer a separate field to input bonus grades or allow the teacher to adjust the final score directly.
-9. Review the Grades:
+10. Review the Grades:
     - The teacher reviews all inputted grades and feedback to ensure accuracy.
     - Adjustments can be made at this stage if necessary.
-10. The teacher submits the final grades.
-11. The system publishes the grades, and students are notified via their exam dashboard.
+11. The teacher submits the final grades.
+12. The system publishes the grades, and students are notified via their exam dashboard.
 
 ---
 
 ## Responsibilities of feature
+
+### Student Authentification
+- Provide functional log in page.
+- Provide secure authentication process to the student.
 
 ### Data Handling:
 - Secure and Accurate Grade Input:
