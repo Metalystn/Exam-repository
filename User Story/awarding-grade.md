@@ -46,9 +46,9 @@ Student logs in.
 
 ## Responsibilities of feature
 
-### Student Authentification
+### User Authentification
 - Provide functional log in page.
-- Provide secure authentication process to the student.
+- Provide secure authentication process to the user.
 
 ### Data Handling:
 - Secure and Accurate Grade Input:
