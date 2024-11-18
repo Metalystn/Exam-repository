@@ -5,10 +5,10 @@ This is a core feature. This is because registering for exams is an important pa
 As a student, I need to register to an exam so that I can pass the course.
 
 ### Feature breakdown
-- Student logs in.
-- The system authenticates student.
-  - If the authentication fails, it requires the student to log in again.
-  - If the authentication is successful, the system displays the students' home page.
+- User logs in.
+- The system authenticates user.
+  - If the authentication fails, it requires the user to log in again.
+  - If the authentication is successful, the system displays the user's home page.
 - The student opens the registration interface.
 - The system retrieves the list of subjects the student is registered for.
 - The student selects a list of the subjects they are registered for.
@@ -29,9 +29,9 @@ As a student, I need to register to an exam so that I can pass the course.
 
 ### Responsibilities
 
-### Student Authentification
+### User Authentification
 - Provide functional log in page.
-- Provide secure authentication process to the student.
+- Provide secure authentication process to the user.
 
 #### Registration data collection responsibilities
 - Display a list of subjects the student is registered for.
