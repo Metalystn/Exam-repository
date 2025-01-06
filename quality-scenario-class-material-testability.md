@@ -1,71 +1,60 @@
 # Testability Quality Scenario
 
 ## Stimulus
-A tester wants to verify that the **Homework Controller** properly validates uploaded homework files for compliance with file extension and size constraints.
+A tester prepares and executes a set of tests to validate the **Homework Controller** and its associated components (e.g., **Homework Verifier**) under controlled conditions.
 
 ---
 
 ## Source of Stimulus
-The system tester executes a predefined set of tests using simulated file uploads (e.g., valid and invalid files).
+The **tester** (a user or an automated testing framework) initiates the tests by submitting file upload scenarios.
 
 ---
 
 ## Artifact
-The **Homework Controller** and its subcomponent, the **Homework Verifier**.
+The **Homework Controller** and **Homework Verifier**.
 
 ---
 
 ## Environment
-The system is in a **testing environment** where mock data simulates real scenarios:
-- Test files of various sizes and formats are submitted.
-- The system is running in a controlled state with logging enabled.
+The tests are performed in a **dedicated testing environment**, where:
+- Mock data simulates real-world scenarios (e.g., valid and invalid file uploads).
+- Testing tools interact with the system using specialized APIs designed for controllability.
 
 ---
 
 ## Response
-- The **Homework Controller** processes the requests and delegates file validation to the **Homework Verifier**.
-- The **Homework Verifier**:
-  - Rejects files exceeding the maximum size.
-  - Rejects files with unsupported extensions.
-  - Accepts and processes valid files.
-- The system logs the results for each test case, including:
-  - The reason for rejecting invalid files.
-  - Confirmation of accepted files.
+- The **Homework Controller** processes the test inputs, delegating validation to the **Homework Verifier**.
+- The system generates clear, observable outputs for each test case:
+  - Valid files are accepted and processed.
+  - Invalid files are rejected with detailed error messages.
+- Logs are generated for every decision, capturing input data and outcomes.
 
 ---
 
 ## Response Measure
-- **Detection**: Faulty inputs (e.g., oversized files, unsupported formats) are identified and rejected 100% of the time.
-- **Coverage**: All validation rules (size, extension) are tested and logged.
-- **Efficiency**: Each test case completes within 2 seconds.
-- **Observability**: Test logs provide sufficient detail for debugging and troubleshooting.
+- **Fault Detection**: The system quickly identifies and handles invalid files.
+- **Coverage**: All defined validation rules (e.g., file size, format) are tested.
+- **Observability**: Detailed logs capture every decision, ensuring faults are traceable.
 
 ---
 
-## Modifications to the C4 Diagram
+## Testability Tactic: **Controllability**
 
-### Changes Required
-To ensure the system supports **testability**, the following modifications should be made to the C4 diagram:
+### Description
+Focus on adding **specialized interfaces** (APIs) to control and simulate system inputs during tests. This allows testers to:
+- Inject controlled inputs (e.g., mock file uploads) into the **Homework Controller**.
+- Monitor the system's response to these inputs in real-time.
 
-1. **Add a Testing Framework Component**:
-   - Introduce a component in the **Business Layer** to simulate test cases and validate responses.
-   - Label it as **Testing Framework** or **Testing Interface**.
-
-2. **Enhance Logging and Monitoring**:
-   - Add a **Logging and Monitoring** component in the **Persistence Layer** to record validation results, reasons for failure, and system states.
-   - Connect components like **Homework Verifier** and **Class Material Authenticator** to this logging system.
-
-3. **Illustrate Specialized Testing Interfaces**:
-   - Add connections between the **Testing Framework** and components such as the **Homework Controller** and **Lecture Material Controller**, showing specialized APIs for testing.
-
-4. **Include a Test Data Repository**:
-   - Introduce a **Test Data Repository** in the **Persistence Layer** to store mock data and reusable test cases.
-
+### Implementation in the System
+1. **Specialized Testing API**:
+   - Exposes endpoints in the **Homework Controller** for injecting test scenarios and retrieving outcomes.
+   - Supports automated frameworks to streamline repetitive testing tasks.
+2. **Input Simulation**:
+   - Mock data (valid and invalid files) is injected into the system via the Testing API.
+3. **Immediate Feedback**:
+   - The system provides detailed responses for every test case, allowing testers to observe and validate outcomes.
 
 ---
 
-### Justification for Modifications
-- **Testing Framework**: Centralizes and streamlines test execution and validation.
-- **Logging and Monitoring**: Increases observability, making debugging and validation easier.
-- **Test Data Repository**: Provides reusable and consistent test data for various scenarios.
-- **Testing Environment**: Prevents interference with production workflows, ensuring a safe testing process.
+## Scenario Summary
+This scenario focuses on **controllability** by introducing specialized testing APIs that allow testers to inject mock inputs and observe outputs in a controlled environment. This ensures faults are quickly detectable, responses are measurable, and logs provide actionable insights for debugging.
