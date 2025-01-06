@@ -19,3 +19,5 @@ The architecture requires:
   - Atomic Transactions: Ensure all database operations are part of atomic transactions to maintain consistency.
 - Monitoring and Alerting
   - Health Monitoring: MOnitor the status of the database nodes.
+
+The architecture requirements does not constitude a change in the diagrams as it is a requirement of the external database system.
