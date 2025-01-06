@@ -2,7 +2,7 @@
 
 #### Quality Scenario: Performance
 
-- **Stimulus:** The system receives 5000 concurrent course validation requests.
+- **Stimulus:** The system receives a large number of concurrent requests for processing.
  
 - **Source of Stimulus:** A peak period with multiple users submitting course data simultaneously.
 
@@ -18,8 +18,8 @@
   - Users are notified of their request status (e.g., queued or processed).
 
 - **Response Measure:**
-  - Validation throughput is maintained at 100 requests per second.
-  - The system processes all requests within 60 seconds.
+  - Throughput is maintained at a consistent rate (e.g., 100 requests per second).
+  - All requests are processed within a specified timeframe (e.g., 60 seconds).
 
 ##### The architecture requires:
 
