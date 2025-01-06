@@ -3,23 +3,23 @@
 ## Stimulus
 A student, unfamiliar with the system, attempts to upload homework using the **Homework Submission Interface**.
 
----
+
 
 ## Source of Stimulus
 The **student user**, with minimal prior experience using the system, navigates the interface to complete their task.
 
----
+
 
 ## Artifact
 The **Homework Submission Interface** and its interaction with the **Enrollment Dashboard Web Application**.
 
----
+
 
 ## Environment
 - The system is operating under normal conditions.
 - The interface includes interactive help features, such as tooltips and real-time validation messages.
 
----
+
 
 ## Response
 - The **Homework Submission Interface** guides the student through the upload process with:
@@ -28,14 +28,14 @@ The **Homework Submission Interface** and its interaction with the **Enrollment 
   - Tooltips and hints for complex or unfamiliar features.
 - The interface ensures the file upload is completed successfully or provides actionable guidance to correct errors.
 
----
+
 
 ## Response Measure
 - **Time to Complete Task**: 90% of users unfamiliar with the system can upload a file within 2 minutes.
 - **Error Recovery**: 95% of errors (e.g., unsupported file formats) are corrected by users without external assistance.
 - **Satisfaction**: 90% of users rate the interface as intuitive and easy to use in usability testing surveys.
 
----
+
 
 ## Usability Tactic: Real-Time Feedback and Guidance
 
